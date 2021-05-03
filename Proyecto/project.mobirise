@@ -66,7 +66,9 @@
     },
     "mbrsiteDomain": "d8ounk6fcn",
     "gdpr": false,
-    "publishChangesOnly": false
+    "publishChangesOnly": false,
+    "publishType": "local",
+    "publishPath": "file:///C:/xampp/htdocs/sensacion905/sensacion905"
   },
   "pages": {
     "index.html": {
