@@ -26,21 +26,12 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
-  
-  <script>
-    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
-    var f=new Date();
-    document.getElementById("fecha").innerHTML = diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
-</script> 
-  
 </head>
 <body>
   <?php
     include_once "gestor_noticias.php";
   ?>
   <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-    
     <nav class="navbar navbar-dropdown navbar-expand-lg">
         <div class="container-fluid">
             <div class="navbar-brand">
@@ -81,17 +72,16 @@
 
 <section class="header1 cid-svYKG3tebD mbr-fullscreen" id="header1-o">
 
-    
 
     <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 240, 176);"></div>
     
-    <div id="fecha" style="color:white;  font-family: Verdana, Tahoma; font-weight: bold; font-size: 15px;" >Fecha</div>
+    
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Radio Sensación</strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style display-7">Nuestro Slogan</p>
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Radio Sensación 90.5 Mhz.</strong></h1>
+                <p class="mbr-text mbr-fonts-style display-7">ORO VERDE, ENTRE RÍOS - ARGENTINA</p>
+                <p id="fecha" style="font-family: Verdana, Tahoma; font-weight: bold; font-size: 15px;" >Fecha</p>
                 <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="https://mobiri.se">Radio en VIVO</a></div>
             </div>
         </div>
@@ -316,3 +306,9 @@
    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
   </body>
 </html>
+<script>
+    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+    var f=new Date();
+    document.getElementById("fecha").innerHTML = diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
+</script> 
