@@ -1643,7 +1643,8 @@ a {
   }
 }
 .cid-swmvWIAYow {
-  background-image: url("../../../assets/images/sensacion.gif");
+  /* background-image: url("../../../assets/images/sensacion.gif"); */
+  background-image: url("../../../assets/images/sensacion.mp4");
 }
 .cid-swmvWIAYow .mbr-section-title {
   color: #4479d9;

@@ -126,32 +126,29 @@
         <div class="mbr-overlay"></div>
         <div class="container-fluid">
             <div class="mbr-section-head">
-                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Nuestros
-                        amigos</strong></h4>
-
+                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>Nuestros amigos</strong>
+                </h4>
             </div>
+
             <div class="row mt-4">
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item features-image сol-12 col-md-6 col-lg-3">
                     <div class="item-wrapper">
                         <div class="item-img">
                             <a href="https://www.iapserseguros.com.ar/" target="_blank"><img
                                     src="assets/images/iapser-seguros-1-479x406.jpg" alt="Instituto del Seguro"></a>
                         </div>
-
-
                     </div>
                 </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item features-image сol-12 col-md-6 col-lg-3">
                     <div class="item-wrapper">
                         <div class="item-img">
                             <a href="https://julicroc.com.ar/" target="_blank"><img
                                     src="assets/images/julicroc-logo-770x770.png" alt="julicroc"></a>
                         </div>
-
-
                     </div>
                 </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
+                <div class="item features-image сol-12 col-md-6 col-lg-3">
                     <div class="item-wrapper">
                         <div class="item-img">
                             <a href="https://www.facebook.com/Radio-Sensaci%C3%B3n-905-205954626139302/"
@@ -160,11 +157,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="item features-image сol-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <a href="https://www.instagram.com/flydata_parana/" target="_blank"><img
+                                    src="assets/images/instagram.jpg" alt="Radio Sensación 90.5"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div class="item features-image сol-12 col-md-6 col-lg-4 offset-lg-4">
+            <div class="row mt-4">
+                <div class="item features-image сol-12 col-md-6 col-lg-6">
+                    <!-- <div class="item features-image сol-12 col-md-6 col-lg-4 offset-lg-4"> -->
                     <div class="item-wrapper">
                         <div id="TTPW_fghzf">El tiempo - Tutiempo.net</div>
-                        <script type="text/javascript" src="https://www.tutiempo.net/s-widget/pw/ffghzf/C00/"></script>
+                        <script type="text/javascript" src="https://www.tutiempo.net/s-widget/pw/ffghzf/C00/">
+                        </script>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-6">
+                    <div class="item-wrapper">
+                        <iframe src="https://www.oroverde.gob.ar/noticias/"
+                            style="border:none; overflow:hidden; height:411px;"></iframe>
                     </div>
                 </div>
             </div>
@@ -178,80 +193,6 @@
         $gestor->palabras($seleccion);
         ?>
     </section>
-
-    <!-- <section class="features4 cid-svVdP3rSlo" id="features4-l">
-        <div class="container">
-            <div class="mbr-section-head">
-                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Noticias</strong><strong><br></strong>
-                </h4>
-            </div>
-            <div class="row mt-4">
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="assets/images/product2.jpg" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">
-                                <strong>TIENE CORONAVIRUS
-                                </strong>
-                            </h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">03/05/2021 11:55</h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Cornejo sigue internado en sala
-                                común, con oxígeno.</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a
-                                href="https://www.telam.com.ar/notas/202105/552858-cornejo-internado-coronavirus.html"
-                                class="btn item-btn btn-black display-7" target="_blank">Leer más
-                                &gt;</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="assets/images/product3.jpg" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">
-                                <strong>CORONAVIRUS</strong>
-                            </h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">03/05/2021 12:17</h6>
-                            
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">El Programa de vacunas de la ONU firmó
-                                acuerdo con Moderna por 500 millones de dosis.
-                            </p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a
-                                href="https://www.telam.com.ar/notas/202105/552861-covax-vacunas-onu-moderna.html"
-                                class="btn item-btn btn-black display-7" target="_blank">Leer más
-                                &gt;</a></div>
-                    </div>
-                </div>
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="assets/images/product1.jpg" alt="" title="">
-                        </div>
-                        <div class="item-content">
-                            <h5 class="item-title mbr-fonts-style display-5">
-                                <strong>
-                                    SEGUNDA OLA DE CONTAGIOS
-                                </strong>
-                            </h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">02/05/2021</h6>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">Entre Ríos suspende la
-                                presencialidad en escuelas de Paraná y otras ciudades.<br></p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href=""
-                                class="btn item-btn btn-black display-7" target="_blank">Start Now
-                                &gt;</a></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
 
     <section class="tabs content18 cid-swlMBGXp4t mbr-parallax-background" id="tabs1-q">
         <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);">
@@ -451,7 +392,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="card-wrapper">
+                    <!-- <div class="card-wrapper">
                         <div class="image-wrapper">
                             <span class="mbr-iconfont mobi-mbri-globe mobi-mbri"></span>
                         </div>
@@ -464,7 +405,7 @@
                                     class="text-primary">miradiosensacion952@gmail.com</a>
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="map-wrapper col-12 col-md-6">
                     <div class="google-map">
@@ -519,7 +460,7 @@
         style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">
         <a href="https://mobirise.site/g" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
         <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">How to build your own site -  -->
-        <a href="https://mobirise.site/x" style="color:#aaa;"></a>
+    <a href="https://mobirise.site/x" style="color:#aaa;"></a>
     <!-- </p>
     </section> -->
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
