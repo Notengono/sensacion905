@@ -799,7 +799,7 @@ a {
   color: #bbbbbb;
 }
 .cid-svZ167IwRh {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
   background: #ffffff;
 }
@@ -1715,4 +1715,55 @@ a {
 }
 .cid-s48P1Icc8J .media-container-row .row-copirayt p {
   width: 100%;
+}
+
+/* Agregados por tinchus */
+.cid-swlMBGXp4t {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url("../../../assets/images/background1.jpg");
+}
+.cid-swlMBGXp4t .nav-tabs .nav-item.open .nav-link:focus,
+.cid-swlMBGXp4t .nav-tabs .nav-link.active:focus {
+  outline: none;
+}
+.cid-swlMBGXp4t .nav-tabs {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #6592e6;
+}
+@media (max-width: 767px) {
+  .cid-swlMBGXp4t .nav-item {
+    width: 100%;
+    margin: 0;
+  }
+}
+.cid-swlMBGXp4t .nav-tabs .nav-link {
+  transition: all .5s;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0 !important;
+}
+.cid-swlMBGXp4t .nav-tabs .nav-link:not(.active) {
+  color: #000000;
+}
+.cid-swlMBGXp4t .nav-tabs .nav-item {
+  margin-right: 1.5rem;
+}
+.cid-swlMBGXp4t .nav-link,
+.cid-swlMBGXp4t .nav-link.active {
+  padding: 1rem 0;
+  background-color: transparent;
+}
+.cid-swlMBGXp4t .nav-tabs .nav-link.active {
+  color: #6592e6;
+  border-bottom: 3px solid #6592e6;
+}
+.cid-swlMBGXp4t H4 {
+  text-align: center;
+}
+.cid-swlMBGXp4t H3 {
+  text-align: center;
+}
+.cid-swlMBGXp4t P {
+  text-align: left;
 }

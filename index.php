@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="assets/images/fm-sensacion-logo-128x97-1.png" type="image/x-icon">
     <meta name="description" content="">
 
-
     <title>Home</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
@@ -39,16 +38,11 @@
     </noscript>
     <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
-
-
-
 </head>
 
 <body>
-
+    <?php include_once "gestor_noticias.php"; ?>
     <section class="menu cid-s48OLK6784" once="menu" id="menu1-h">
-
         <nav class="navbar navbar-dropdown navbar-expand-lg">
             <div class="container-fluid">
                 <div class="navbar-brand">
@@ -105,30 +99,23 @@
                             <span class="p-2 mbr-iconfont socicon-instagram socicon"
                                 style="color: rgb(0, 0, 0); fill: rgb(0, 0, 0);"></span>
                         </a>
-
-
                     </div>
-
                 </div>
             </div>
         </nav>
-
     </section>
 
     <section class="header1 cid-svYKG3tebD mbr-fullscreen" id="header1-o">
-
-
-
         <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 240, 176);"></div>
-
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Radio Sensación</strong></h1>
-
-
-                    <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="EnVivo.html">Radio en
-                            VIVO</a></div>
+                    <p class="mbr-text mbr-fonts-style display-7">ORO VERDE, ENTRE RÍOS - ARGENTINA</p>
+                    <p id="fecha" style="font-family: Verdana, Tahoma; font-weight: bold; font-size: 15px;">Fecha</p>
+                    <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="EnVivo.html">
+                            Radio en VIVO</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -183,8 +170,16 @@
             </div>
         </div>
     </section>
-
     <section class="features4 cid-svVdP3rSlo" id="features4-l">
+        <?php 
+        $seleccion = 'g';
+        if (isset($_GET['s'])) $seleccion = $_GET['s'];
+        $gestor = new Noticias;
+        $gestor->palabras($seleccion);
+        ?>
+    </section>
+
+    <!-- <section class="features4 cid-svVdP3rSlo" id="features4-l">
         <div class="container">
             <div class="mbr-section-head">
                 <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
@@ -222,10 +217,7 @@
                                 <strong>CORONAVIRUS</strong>
                             </h5>
                             <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">03/05/2021 12:17</h6>
-                            <!-- <p class="mbr-text mbr-fonts-style mt-3 display-7">Las vacunas producidas por el laboratorio
-                                estadounidense serán para distribuir a países de ingresos bajos y medios, aunque los
-                                envíos comenzarán recién en el último trimestre de este año.
-                            </p> -->
+                            
                             <p class="mbr-text mbr-fonts-style mt-3 display-7">El Programa de vacunas de la ONU firmó
                                 acuerdo con Moderna por 500 millones de dosis.
                             </p>
@@ -259,20 +251,162 @@
 
             </div>
         </div>
+    </section> -->
+
+    <section class="tabs content18 cid-swlMBGXp4t mbr-parallax-background" id="tabs1-q">
+        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(255, 255, 255);">
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2"><strong>Programación</strong></h3>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-8">
+                    <ul class="nav nav-tabs mb-4" role="tablist">
+                        <li class="nav-item first mbr-fonts-style"><a
+                                class="nav-link mbr-fonts-style show active display-7" role="tab" data-toggle="tab"
+                                href="#tabs1-q_tab0" aria-selected="true"><strong>Lunes a Viernes</strong></a></li>
+                        <li class="nav-item"><a class="nav-link mbr-fonts-style active display-7" role="tab"
+                                data-toggle="tab" href="#tabs1-q_tab1" aria-selected="true"><strong>Sábado</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mbr-fonts-style active display-7" role="tab" data-toggle="tab"
+                                href="#tabs1-q_tab2" aria-selected="true">
+                                <strong>Domingo</strong>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane in active" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <p class="mbr-text mbr-fonts-style display-7"><br></p> -->
+                                    <table class="table wow slideInUp animated" data-wow-delay="0.5s"
+                                        style="visibility: visible; animation-delay: 0.5s;">
+                                        <tbody>
+                                            <tr style="color: #f1ac04">
+                                                <th scope="row">DE 09.00 A 21</th>
+                                                <td>A CADA HORA NOTICIAS R.S. 90.5</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6:00 a 12:00</th>
+                                                <td>EFECTO POSITIVO - Música en frecuencia multicolor</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">12:00 a 13:00</th>
+                                                <td>SUPER CERCA - Andrea Landi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13:00 a 17:00</th>
+                                                <td>SENSACION VITAL</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">17:00 a 19:00</th>
+                                                <td>FORMULA HITS</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">19:00 a 21:00</th>
+                                                <td>PASADO PERFECTO - Carlos Albera</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">21:00 a 21:30</th>
+                                                <td>SONIDOS GENERANDO DOPAMINA</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">21:30 a 22:30</th>
+                                                <td>SONIDOS DEL SILENCIO - Rosana Falasco</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">22:00 a 2:00</th>
+                                                <td>PLACER MUSICA ANTI ESTRES </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <p class="mbr-text mbr-fonts-style display-7"><br></p> -->
+                                    <table class="table  wow slideInUp animated" data-wow-delay="0.7s"
+                                        style="visibility: visible; animation-delay: 0.7s;">
+
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">6:00 a 9:00</th>
+                                                <td> A MI ME GUSTA LA MÚSICA</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9:00 a 14:00</th>
+                                                <td>EFECTO MÚSICA, CALIDAD OPTIMA Conduce JMR</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">14:00 a 20:00</th>
+                                                <td>PASADO PERFECTO WEEK END CARLOS ALBERA</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">20:00 a 2:00</th>
+                                                <td>SONIDOS TRANQUILIDAD EXTREMA LOS PRINCIPALES DEL<br>OÍDO AL CORAZÓN
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <!-- <p class="mbr-text mbr-fonts-style display-7"><br></p> -->
+                                    <table class="table wow slideInUp animated" data-wow-delay="0.9s"
+                                        style="visibility: visible; animation-delay: 0.9s;">
+                                        <tbody>
+                                            <tr style="color: #f1ac04">
+                                                <th scope="row">11:50 y 16:45</th>
+                                                <td>SÍNTESIS DE NOTICIAS LOS QUE PASO EN LA SEMANA </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6:00 a 13:00</th>
+                                                <td>LA MAÑANA LIBRE</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13:00 a 17:00</th>
+                                                <td>FORMULA HITS</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">17:00 a 00:00</th>
+                                                <td>ANTOLOGÍA - DANIEL DELFINO</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">00:00 a 02:00</th>
+                                                <td>SICAMU - ESPERANDO EL SHOW DINAMICO</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="contacts3 map1 cid-svZ167IwRh" id="contacts3-s">
-
-
-
         <div class="container">
             <div class="mbr-section-head">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                    <strong>Contacts</strong>
+                    <strong>Contactos</strong>
                 </h3>
-                <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">
+                <!-- <h4 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">
                     Contacts Subtitle
-                </h4>
+                </h4> -->
             </div>
             <div class="row justify-content-center mt-4">
                 <div class="card col-12 col-md-6">
@@ -285,10 +419,35 @@
                                 <strong>Teléfonos</strong>
                             </h6>
                             <p class="mbr-text mbr-fonts-style display-7">
-                                <a href="tel:+5493436222839" class="text-primary">
-                                    +5493436222839 - +54 9 343 6337237 - +54 9 343 5128041
+                                <a href="tel:+5493436222839" class="text-primary">+54 9 343 6222839</a>
+                                <a href="https://web.whatsapp.com/send?phone=5493436222839&text=Hola,%20me%20comunico%20desde%20la%20p%C3%A1gina%20web%20de%20Radio%20Sensaci%C3%B3n"
+                                    class="text-primary">
+                                    <i class="fa fa-whatsapp"></i>
                                 </a>
-
+                            </p>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <a href="tel:+5493436337237" class="text-primary">
+                                    +54 9 343 6337237
+                                </a>
+                            </p>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <a href="tel:+5493435128041" class="text-primary">
+                                    +54 9 343 5128041
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="image-wrapper">
+                            <span class="mbr-iconfont mobi-mbri-globe mobi-mbri"></span>
+                        </div>
+                        <div class="text-wrapper">
+                            <h6 class="card-title mbr-fonts-style mb-1 display-5">
+                                <strong>Facebook</strong>
+                            </h6>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                <a href="https://www.facebook.com/Radio-Sensaci%C3%B3n-905-205954626139302/"
+                                    class="text-primary">Seguinos en Facebook -Radio Sensación</a>
                             </p>
                         </div>
                     </div>
@@ -301,7 +460,8 @@
                                 <strong>Email</strong>
                             </h6>
                             <p class="mbr-text mbr-fonts-style display-7">
-                                <a href="mailto:miradiosensacion952@gmail.com" class="text-primary">miradiosensacion952@gmail.com</a>
+                                <a href="mailto:miradiosensacion952@gmail.com"
+                                    class="text-primary">miradiosensacion952@gmail.com</a>
                             </p>
                         </div>
                     </div>
@@ -355,12 +515,13 @@
             </div>
         </div>
     </section>
-    <section
+    <!-- <section
         style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">
         <a href="https://mobirise.site/g" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a>
-        <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">How to build your own site - <a
-                href="https://mobirise.site/x" style="color:#aaa;">Check it out</a></p>
-    </section>
+        <p style="flex: 0 0 auto; margin:0; padding-right:1rem;">How to build your own site -  -->
+        <a href="https://mobirise.site/x" style="color:#aaa;"></a>
+    <!-- </p>
+    </section> -->
     <script src="assets/web/assets/jquery/jquery.min.js"></script>
     <script src="assets/popper/popper.min.js"></script>
     <script src="assets/tether/tether.min.js"></script>
@@ -374,8 +535,18 @@
     <script src="assets/dropdown/js/nav-dropdown.js"></script>
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/mbr-tabs/mbr-tabs.js"></script>
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
+
+    <script>
+    var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
+        "Octubre", "Noviembre", "Diciembre");
+    var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+    var f = new Date();
+    document.getElementById("fecha").innerHTML = diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f
+        .getMonth()] + " de " + f.getFullYear();
+    </script>
 
 
     <input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d'
